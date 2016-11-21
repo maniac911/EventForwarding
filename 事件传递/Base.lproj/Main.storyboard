@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pv7-qq-eaA" customClass="GreenView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.53390068058947593" green="1" blue="0.63217668371535063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="0i0-rW-1W5"/>
+                                    <constraint firstAttribute="width" constant="150" id="cZI-im-ZzG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0i0-rW-1W5"/>
+                                        <exclude reference="cZI-im-ZzG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="0i0-rW-1W5"/>
+                                        <include reference="cZI-im-ZzG"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-TD-4H0" customClass="MagentaView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.97622035441239774" green="0.41858806604114807" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="f1Z-li-c0q"/>
+                                    <constraint firstAttribute="width" constant="180" id="xkB-Pg-lNM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="f1Z-li-c0q"/>
+                                        <exclude reference="xkB-Pg-lNM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="f1Z-li-c0q"/>
+                                        <include reference="xkB-Pg-lNM"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="greenView" destination="Pv7-qq-eaA" id="x2J-c6-RxX"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pv7-qq-eaA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="GFh-OR-nAA"/>
+                            <constraint firstItem="uqI-TD-4H0" firstAttribute="leading" secondItem="Pv7-qq-eaA" secondAttribute="leading" id="Zfe-Ll-IaC"/>
+                            <constraint firstItem="uqI-TD-4H0" firstAttribute="top" secondItem="Pv7-qq-eaA" secondAttribute="top" constant="20" id="kq1-1X-dqt"/>
+                            <constraint firstItem="Pv7-qq-eaA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="mxs-gO-n2O"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Pv7-qq-eaA"/>
+                                <exclude reference="uqI-TD-4H0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Zfe-Ll-IaC"/>
+                                <exclude reference="kq1-1X-dqt"/>
+                                <exclude reference="GFh-OR-nAA"/>
+                                <exclude reference="mxs-gO-n2O"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="Pv7-qq-eaA"/>
+                                <include reference="uqI-TD-4H0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Zfe-Ll-IaC"/>
+                                <include reference="kq1-1X-dqt"/>
+                                <include reference="GFh-OR-nAA"/>
+                                <include reference="mxs-gO-n2O"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
